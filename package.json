@@ -2,6 +2,8 @@
   "name": "strikeface-ua",
   "version": "1.0.0",
   "private": true,
-  "scripts": {},
+  "scripts": {
+     "build": "next build"
+  },
   "dependencies": {}
 }
