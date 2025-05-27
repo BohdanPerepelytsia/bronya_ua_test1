@@ -1,12 +1,7 @@
 {
   "name": "strikeface-ua",
   "version": "1.0.0",
-  "description": "Лендінг для продажу бронеплити з Telegram інтеграцією",
-  "main": "index.html",
-  "scripts": {
-    "dev": "vercel dev",
-    "build": "vercel build",
-    "start": "vercel start"
-  },
-  "license": "MIT"
+  "private": true,
+  "scripts": {},
+  "dependencies": {}
 }
