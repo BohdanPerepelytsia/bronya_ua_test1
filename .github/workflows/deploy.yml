@@ -3,7 +3,7 @@ name: Deploy to Vercel
 on:
   push:
     branches:
-      - main # або твоя гілка
+      - main
 
 jobs:
   deploy:
@@ -24,8 +24,11 @@ jobs:
       - name: Install Vercel CLI
         run: npm install -g vercel
 
+      - name: Check Vercel Version
+        run: vercel --version
+
       - name: Build the project
         run: npm run build
 
       - name: Deploy to Vercel
-        run: vercel --token=${{ secrets.VERCEL_TOKEN }} --prod
+        run: vercel --prod --token=${{ secrets.VERCEL_TOKEN }}
